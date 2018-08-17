@@ -17,5 +17,6 @@
           - geerlingguy.git
           - tecris.maven
           - geerlingguy.ansible
+          - ansible-role-vagrant
 
 

@@ -49,7 +49,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
    app.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
    app.vm.network :private_network, ip: "172.16.10.130"
    app.vm.provider :esxi do |lb|
-       lb.memory = 512
+       lb.memory = 2048
    end
  end
 # 
