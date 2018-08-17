@@ -1,0 +1,185 @@
+2018-08-10 08:20:06,772 p=51165 u=mangel.falcon |  ERROR! Unable to open ansible/requirements.yml: [Errno 2] No such file or directory: u'ansible/requirements.yml'
+2018-08-10 08:20:20,293 p=51516 u=mangel.falcon |  - downloading role 'java', owned by geerlingguy
+2018-08-10 08:20:24,123 p=51516 u=mangel.falcon |  - downloading role from https://github.com/geerlingguy/ansible-role-java/archive/1.8.1.tar.gz
+2018-08-10 08:20:26,700 p=51516 u=mangel.falcon |  - extracting geerlingguy.java to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.java
+2018-08-10 08:20:26,710 p=51516 u=mangel.falcon |  - geerlingguy.java (1.8.1) was installed successfully
+2018-08-10 08:20:28,594 p=51516 u=mangel.falcon |  - downloading role 'jenkins', owned by geerlingguy
+2018-08-10 08:20:32,346 p=51516 u=mangel.falcon |  - downloading role from https://github.com/geerlingguy/ansible-role-jenkins/archive/3.5.0.tar.gz
+2018-08-10 08:20:35,042 p=51516 u=mangel.falcon |  - extracting geerlingguy.jenkins to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.jenkins
+2018-08-10 08:20:35,053 p=51516 u=mangel.falcon |  - geerlingguy.jenkins (3.5.0) was installed successfully
+2018-08-10 08:20:35,055 p=51516 u=mangel.falcon |   [WARNING]: - dependency geerlingguy.java from role geerlingguy.jenkins differs from already installed version (1.8.1), skipping
+
+2018-08-10 08:20:36,813 p=51516 u=mangel.falcon |  - downloading role 'postgresql', owned by geerlingguy
+2018-08-10 08:20:39,767 p=51516 u=mangel.falcon |  - downloading role from https://github.com/geerlingguy/ansible-role-postgresql/archive/1.4.3.tar.gz
+2018-08-10 08:20:42,481 p=51516 u=mangel.falcon |  - extracting geerlingguy.postgresql to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.postgresql
+2018-08-10 08:20:42,496 p=51516 u=mangel.falcon |  - geerlingguy.postgresql (1.4.3) was installed successfully
+2018-08-10 08:20:43,959 p=51516 u=mangel.falcon |  - downloading role 'sonar', owned by geerlingguy
+2018-08-10 08:20:47,322 p=51516 u=mangel.falcon |  - downloading role from https://github.com/geerlingguy/ansible-role-sonar/archive/1.4.0.tar.gz
+2018-08-10 08:20:49,953 p=51516 u=mangel.falcon |  - extracting geerlingguy.sonar to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.sonar
+2018-08-10 08:20:49,964 p=51516 u=mangel.falcon |  - geerlingguy.sonar (1.4.0) was installed successfully
+2018-08-10 08:20:49,966 p=51516 u=mangel.falcon |   [WARNING]: - dependency geerlingguy.java from role geerlingguy.sonar differs from already installed version (1.8.1), skipping
+
+2018-08-10 08:20:49,966 p=51516 u=mangel.falcon |  - adding dependency: geerlingguy.mysql
+2018-08-10 08:20:51,683 p=51516 u=mangel.falcon |  - downloading role 'unzip', owned by wtanaka
+2018-08-10 08:20:54,878 p=51516 u=mangel.falcon |  - downloading role from https://github.com/wtanaka/ansible-role-unzip/archive/master.tar.gz
+2018-08-10 08:20:58,069 p=51516 u=mangel.falcon |  - extracting wtanaka.unzip to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/wtanaka.unzip
+2018-08-10 08:20:58,077 p=51516 u=mangel.falcon |  - wtanaka.unzip (master) was installed successfully
+2018-08-10 08:20:59,868 p=51516 u=mangel.falcon |  - downloading role 'nexus3-oss', owned by savoirfairelinux
+2018-08-10 08:21:04,539 p=51516 u=mangel.falcon |  - downloading role from https://github.com/savoirfairelinux/ansible-nexus3-oss/archive/v1.7.1.tar.gz
+2018-08-10 08:21:07,104 p=51516 u=mangel.falcon |  - extracting savoirfairelinux.nexus3-oss to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/savoirfairelinux.nexus3-oss
+2018-08-10 08:21:07,140 p=51516 u=mangel.falcon |  - savoirfairelinux.nexus3-oss (v1.7.1) was installed successfully
+2018-08-10 08:21:08,497 p=51516 u=mangel.falcon |  - downloading role 'git', owned by geerlingguy
+2018-08-10 08:21:12,519 p=51516 u=mangel.falcon |  - downloading role from https://github.com/geerlingguy/ansible-role-git/archive/2.0.2.tar.gz
+2018-08-10 08:21:16,101 p=51516 u=mangel.falcon |  - extracting geerlingguy.git to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.git
+2018-08-10 08:21:16,108 p=51516 u=mangel.falcon |  - geerlingguy.git (2.0.2) was installed successfully
+2018-08-10 08:21:17,770 p=51516 u=mangel.falcon |  - downloading role 'maven', owned by tecris
+2018-08-10 08:21:21,685 p=51516 u=mangel.falcon |  - downloading role from https://github.com/tecris/ansible-maven/archive/v3.5.2.tar.gz
+2018-08-10 08:21:23,958 p=51516 u=mangel.falcon |  - extracting tecris.maven to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/tecris.maven
+2018-08-10 08:21:23,967 p=51516 u=mangel.falcon |  - tecris.maven (v3.5.2) was installed successfully
+2018-08-10 08:21:25,026 p=51516 u=mangel.falcon |  - downloading role 'repo-epel', owned by geerlingguy
+2018-08-10 08:21:28,106 p=51516 u=mangel.falcon |  - downloading role from https://github.com/geerlingguy/ansible-role-repo-epel/archive/1.2.3.tar.gz
+2018-08-10 08:21:30,312 p=51516 u=mangel.falcon |  - extracting geerlingguy.repo-epel to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.repo-epel
+2018-08-10 08:21:30,317 p=51516 u=mangel.falcon |  - geerlingguy.repo-epel (1.2.3) was installed successfully
+2018-08-10 08:21:31,806 p=51516 u=mangel.falcon |  - downloading role 'ansible', owned by geerlingguy
+2018-08-10 08:21:35,215 p=51516 u=mangel.falcon |  - downloading role from https://github.com/geerlingguy/ansible-role-ansible/archive/1.3.0.tar.gz
+2018-08-10 08:21:38,432 p=51516 u=mangel.falcon |  - extracting geerlingguy.ansible to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.ansible
+2018-08-10 08:21:38,437 p=51516 u=mangel.falcon |  - geerlingguy.ansible (1.3.0) was installed successfully
+2018-08-10 08:21:39,708 p=51516 u=mangel.falcon |  - downloading role 'mysql', owned by geerlingguy
+2018-08-10 08:21:44,369 p=51516 u=mangel.falcon |  - downloading role from https://github.com/geerlingguy/ansible-role-mysql/archive/2.9.0.tar.gz
+2018-08-10 08:21:46,593 p=51516 u=mangel.falcon |  - extracting geerlingguy.mysql to /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.mysql
+2018-08-10 08:21:46,606 p=51516 u=mangel.falcon |  - geerlingguy.mysql (2.9.0) was installed successfully
+2018-08-10 08:22:07,058 p=55189 u=mangel.falcon |   [WARNING]: Ignoring invalid attribute: sudo
+
+2018-08-10 08:22:07,073 p=55189 u=mangel.falcon |   [WARNING]: file /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/wtanaka.unzip/tasks/RedHat.yml is empty and had no tasks to include
+
+2018-08-10 08:22:07,382 p=55189 u=mangel.falcon |  PLAY [Deploy Jenkins CI] ***************************************************************************************************************************************************************************************
+2018-08-10 08:22:07,411 p=55189 u=mangel.falcon |  TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+2018-08-10 08:22:07,439 p=55189 u=mangel.falcon |  fatal: [jenkins]: FAILED! => {"msg": "the connection plugin 'paramiko%' was not found"}
+2018-08-10 08:22:07,441 p=55189 u=mangel.falcon |  	to retry, use: --limit @/Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/alm.retry
+
+2018-08-10 08:22:07,441 p=55189 u=mangel.falcon |  PLAY RECAP *****************************************************************************************************************************************************************************************************
+2018-08-10 08:22:07,442 p=55189 u=mangel.falcon |  jenkins                    : ok=0    changed=0    unreachable=0    failed=1   
+2018-08-10 08:22:31,638 p=56237 u=mangel.falcon |   [WARNING]: Ignoring invalid attribute: sudo
+
+2018-08-10 08:22:31,654 p=56237 u=mangel.falcon |   [WARNING]: file /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/wtanaka.unzip/tasks/RedHat.yml is empty and had no tasks to include
+
+2018-08-10 08:22:32,073 p=56237 u=mangel.falcon |  PLAY [Deploy Jenkins CI] ***************************************************************************************************************************************************************************************
+2018-08-10 08:22:32,105 p=56237 u=mangel.falcon |  TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+2018-08-10 08:22:34,042 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:22:34,072 p=56237 u=mangel.falcon |  TASK [geerlingguy.repo-epel : Check if EPEL repo is already configured.] ***************************************************************************************************************************************
+2018-08-10 08:22:34,591 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:22:34,633 p=56237 u=mangel.falcon |  TASK [geerlingguy.repo-epel : Install EPEL repo.] **************************************************************************************************************************************************************
+2018-08-10 08:22:34,669 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:22:34,755 p=56237 u=mangel.falcon |  TASK [geerlingguy.repo-epel : Import EPEL GPG key.] ************************************************************************************************************************************************************
+2018-08-10 08:22:34,787 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:22:34,839 p=56237 u=mangel.falcon |  TASK [geerlingguy.java : Include OS-specific variables.] *******************************************************************************************************************************************************
+2018-08-10 08:22:34,925 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:22:34,971 p=56237 u=mangel.falcon |  TASK [geerlingguy.java : Include OS-specific variables for Fedora.] ********************************************************************************************************************************************
+2018-08-10 08:22:35,005 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:22:35,067 p=56237 u=mangel.falcon |  TASK [geerlingguy.java : Include version-specific variables for Debian.] ***************************************************************************************************************************************
+2018-08-10 08:22:35,110 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:22:35,164 p=56237 u=mangel.falcon |  TASK [geerlingguy.java : Define java_packages.] ****************************************************************************************************************************************************************
+2018-08-10 08:22:35,192 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:22:35,243 p=56237 u=mangel.falcon |  TASK [geerlingguy.java : include_tasks] ************************************************************************************************************************************************************************
+2018-08-10 08:22:35,324 p=56237 u=mangel.falcon |  included: /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.java/tasks/setup-RedHat.yml for jenkins
+2018-08-10 08:22:35,373 p=56237 u=mangel.falcon |  TASK [geerlingguy.java : Ensure Java is installed.] ************************************************************************************************************************************************************
+2018-08-10 08:23:12,428 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=java-1.8.0-openjdk-devel)
+2018-08-10 08:23:12,467 p=56237 u=mangel.falcon |  TASK [geerlingguy.java : include_tasks] ************************************************************************************************************************************************************************
+2018-08-10 08:23:12,500 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:23:12,554 p=56237 u=mangel.falcon |  TASK [geerlingguy.java : include_tasks] ************************************************************************************************************************************************************************
+2018-08-10 08:23:12,589 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:23:12,655 p=56237 u=mangel.falcon |  TASK [geerlingguy.java : Set JAVA_HOME if configured.] *********************************************************************************************************************************************************
+2018-08-10 08:23:12,692 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:23:12,750 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Include OS-Specific variables] *****************************************************************************************************************************************************
+2018-08-10 08:23:12,824 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:23:12,874 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Define jenkins_repo_url] ***********************************************************************************************************************************************************
+2018-08-10 08:23:12,999 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:23:13,049 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Define jenkins_repo_key_url] *******************************************************************************************************************************************************
+2018-08-10 08:23:13,183 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:23:13,229 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Define jenkins_pkg_url] ************************************************************************************************************************************************************
+2018-08-10 08:23:13,359 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:23:13,409 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : include_tasks] *********************************************************************************************************************************************************************
+2018-08-10 08:23:13,538 p=56237 u=mangel.falcon |  included: /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.jenkins/tasks/setup-RedHat.yml for jenkins
+2018-08-10 08:23:13,582 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Ensure dependencies are installed.] ************************************************************************************************************************************************
+2018-08-10 08:23:14,398 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:23:14,445 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Ensure Jenkins repo is installed.] *************************************************************************************************************************************************
+2018-08-10 08:23:17,140 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:23:17,179 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Add Jenkins repo GPG key.] *********************************************************************************************************************************************************
+2018-08-10 08:23:19,269 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:23:19,310 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Download specific Jenkins version.] ************************************************************************************************************************************************
+2018-08-10 08:23:19,347 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:23:19,393 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Check if we downloaded a specific version of Jenkins.] *****************************************************************************************************************************
+2018-08-10 08:23:19,423 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:23:19,477 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Install our specific version of Jenkins.] ******************************************************************************************************************************************
+2018-08-10 08:23:19,512 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:23:19,569 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Ensure Jenkins is installed.] ******************************************************************************************************************************************************
+2018-08-10 08:23:44,409 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:23:44,440 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : include_tasks] *********************************************************************************************************************************************************************
+2018-08-10 08:23:44,463 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:23:44,497 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : include_tasks] *********************************************************************************************************************************************************************
+2018-08-10 08:23:44,555 p=56237 u=mangel.falcon |  included: /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.jenkins/tasks/settings.yml for jenkins
+2018-08-10 08:23:44,587 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Modify variables in init file] *****************************************************************************************************************************************************
+2018-08-10 08:23:45,278 p=56237 u=mangel.falcon |  changed: [jenkins] => (item={u'option': u'JENKINS_ARGS', u'value': u'--prefix='})
+2018-08-10 08:23:45,556 p=56237 u=mangel.falcon |  changed: [jenkins] => (item={u'option': u'JENKINS_JAVA_OPTIONS', u'value': u'-Djenkins.install.runSetupWizard=false'})
+2018-08-10 08:23:45,595 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Set the Jenkins home directory] ****************************************************************************************************************************************************
+2018-08-10 08:23:45,958 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:23:45,996 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Immediately restart Jenkins on init config changes.] *******************************************************************************************************************************
+2018-08-10 08:23:48,208 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:23:48,245 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Set HTTP port in Jenkins config.] **************************************************************************************************************************************************
+2018-08-10 08:23:49,199 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:23:49,238 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Ensure jenkins_home /var/lib/jenkins exists] ***************************************************************************************************************************************
+2018-08-10 08:23:50,175 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:23:50,233 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Create custom init scripts directory.] *********************************************************************************************************************************************
+2018-08-10 08:23:50,866 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:23:50,868 p=56237 u=mangel.falcon |  RUNNING HANDLER [geerlingguy.jenkins : configure default users] ************************************************************************************************************************************************
+2018-08-10 08:23:53,383 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:23:53,431 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Immediately restart Jenkins on http or user changes.] ******************************************************************************************************************************
+2018-08-10 08:23:55,951 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:23:55,991 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Ensure Jenkins is started and runs on startup.] ************************************************************************************************************************************
+2018-08-10 08:23:56,919 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:23:56,970 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Wait for Jenkins to start up before proceeding.] ***********************************************************************************************************************************
+2018-08-10 08:23:57,750 p=56237 u=mangel.falcon |  FAILED - RETRYING: Wait for Jenkins to start up before proceeding. (60 retries left).
+2018-08-10 08:24:05,279 p=56237 u=mangel.falcon |  FAILED - RETRYING: Wait for Jenkins to start up before proceeding. (59 retries left).
+2018-08-10 08:24:11,243 p=56237 u=mangel.falcon |  FAILED - RETRYING: Wait for Jenkins to start up before proceeding. (58 retries left).
+2018-08-10 08:24:21,372 p=56237 u=mangel.falcon |  FAILED - RETRYING: Wait for Jenkins to start up before proceeding. (57 retries left).
+2018-08-10 08:24:26,854 p=56237 u=mangel.falcon |   [WARNING]: Consider using the get_url or uri module rather than running curl.  If you need to use command because get_url or uri is insufficient you can add warn=False to this command task or set
+command_warnings=False in ansible.cfg to get rid of this message.
+
+2018-08-10 08:24:26,854 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:24:26,889 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Get the jenkins-cli jarfile from the Jenkins server.] ******************************************************************************************************************************
+2018-08-10 08:24:27,357 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:24:27,391 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Remove Jenkins security init scripts after first startup.] *************************************************************************************************************************
+2018-08-10 08:24:27,733 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:24:27,770 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : include_tasks] *********************************************************************************************************************************************************************
+2018-08-10 08:24:27,824 p=56237 u=mangel.falcon |  included: /Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/roles/geerlingguy.jenkins/tasks/plugins.yml for jenkins
+2018-08-10 08:24:27,858 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Get Jenkins admin password from file.] *********************************************************************************************************************************************
+2018-08-10 08:24:27,878 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:24:27,908 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Set Jenkins admin password fact.] **************************************************************************************************************************************************
+2018-08-10 08:24:28,006 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:24:28,044 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Get Jenkins admin token from file.] ************************************************************************************************************************************************
+2018-08-10 08:24:28,066 p=56237 u=mangel.falcon |  skipping: [jenkins]
+2018-08-10 08:24:28,100 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Set Jenkins admin token fact.] *****************************************************************************************************************************************************
+2018-08-10 08:24:28,203 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:24:28,237 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Create update directory] ***********************************************************************************************************************************************************
+2018-08-10 08:24:28,658 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:24:28,697 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Download current plugin updates from Jenkins update site] **************************************************************************************************************************
+2018-08-10 08:24:29,072 p=56237 u=mangel.falcon |  changed: [jenkins]
+2018-08-10 08:24:29,138 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Remove first and last line from json file] *****************************************************************************************************************************************
+2018-08-10 08:24:29,569 p=56237 u=mangel.falcon |  ok: [jenkins]
+2018-08-10 08:24:29,607 p=56237 u=mangel.falcon |  TASK [geerlingguy.jenkins : Install Jenkins plugins using password.] *******************************************************************************************************************************************
+2018-08-10 08:24:35,525 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=sonar)
+2018-08-10 08:24:43,224 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=nexus-artifact-uploader)
+2018-08-10 08:24:46,833 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=ansible)
+2018-08-10 08:25:17,997 p=56237 u=mangel.falcon |  failed: [jenkins] (item=workflow-aggregator) => {"changed": false, "details": "Connection failure: timed out", "item": "workflow-aggregator", "msg": "Cannot install plugin."}
+2018-08-10 08:25:27,832 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=slack)
+2018-08-10 08:25:29,201 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=slack-uploader)
+2018-08-10 08:25:31,884 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=git)
+2018-08-10 08:25:35,753 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=github)
+2018-08-10 08:25:36,364 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=credentials-binding)
+2018-08-10 08:25:38,078 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=pipeline-utility-steps)
+2018-08-10 08:25:39,592 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=disk-usage)
+2018-08-10 08:25:41,942 p=56237 u=mangel.falcon |  changed: [jenkins] => (item=ws-cleanup)
+2018-08-10 08:25:41,950 p=56237 u=mangel.falcon |  	to retry, use: --limit @/Users/mangel.falcon/Documents/Chakray/Proyectos/Devops/ansible-jenkins-cicd/vagrant-alm/ansible/alm.retry
+
+2018-08-10 08:25:41,950 p=56237 u=mangel.falcon |  PLAY RECAP *****************************************************************************************************************************************************************************************************
+2018-08-10 08:25:41,950 p=56237 u=mangel.falcon |  jenkins                    : ok=33   changed=14   unreachable=0    failed=1   
