@@ -2,18 +2,20 @@
 - name : middleware | admin | users
 
   hosts: all   ## This will apply to all nodes part of the WSO2 server set (WSO2, Jenkins, Bind, NTP etc) APART from the middleware-database-nodes
-  sudo : true
+
+  become: yes
 
   pre_tasks:
-    - name: "Include environment variables"
-      include_vars: '/Vagrantfiles/provisioning/group_vars/all/adminusers.yml'
-      tags:
-        - always
+          - name: "Include environmente variables"
+            include_vars: '/Vagrantfiles/provisioning/group_vars/jenkins_server.yml'
+            tags:
+                    - always
 
   roles:
+          - geerlingguy.repo-epel
+          - geerlingguy.jenkins
+          - geerlingguy.git
+          - tecris.maven
+          - geerlingguy.ansible
 
-    - role: adminusers
 
-  tags:
-    - wso2
-    - additional_admin_users
