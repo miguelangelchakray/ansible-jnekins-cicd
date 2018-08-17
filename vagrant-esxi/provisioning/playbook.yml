@@ -1,0 +1,19 @@
+---
+- name : middleware | admin | users
+
+  hosts: all   ## This will apply to all nodes part of the WSO2 server set (WSO2, Jenkins, Bind, NTP etc) APART from the middleware-database-nodes
+  sudo : true
+
+  pre_tasks:
+    - name: "Include environment variables"
+      include_vars: '/Vagrantfiles/provisioning/group_vars/all/adminusers.yml'
+      tags:
+        - always
+
+  roles:
+
+    - role: adminusers
+
+  tags:
+    - wso2
+    - additional_admin_users

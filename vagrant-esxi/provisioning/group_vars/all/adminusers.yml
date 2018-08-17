@@ -1,0 +1,7 @@
+admin_users:
+  - name: falcon
+    groups: admin
+  - name: franmu
+    groups: admin
+  - name: wso2am
+    group: wso2am

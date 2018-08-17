@@ -1,0 +1,107 @@
+######################################################################
+- name: "Add additional groups"
+  group: name={{ item.name }}
+        state=present
+  with_items: admin_users
+  when: admin_users is defined
+  tags:
+    - install
+    - additional_admin_users
+
+######################################################################
+
+- name: "Allow Admin group to sudo with no password"
+  template: src=01-os-admins.j2
+           dest=/etc/sudoers.d/01-os-admins
+          owner=root
+          group=root
+           mode=0440
+  tags:
+    - install
+    - additional_admin_users
+
+- name: "Add additional user accouts"
+  user:  name={{ item.name }}
+        group={{ item.name }}
+        state=present
+        shell=/bin/bash
+       system=no
+   createhome=yes
+         home=/home/{{ item.name }}
+  with_items: admin_users
+  when: admin_users is defined
+  tags:
+    - install
+    - additional_admin_users
+
+- name: "Add additional authorized_key files"
+  authorized_key: user={{ item.name }}
+                   key="{{ lookup('file', '../../../../secrets/wso2_ssh/users/'+ item.name +'.pub') }}"
+  with_items: admin_users
+  when: admin_users is defined
+  tags:
+    - install
+    - additional_admin_users
+
+- name: "Additional groups"
+  user: name={{ item.name }}
+      groups={{ item.groups }}
+  with_items: admin_users
+  when:  item.groups is defined and admin_users is defined
+  tags:
+    - install
+    - additional_admin_users
+
+- name: "Remove additional user accouts"
+  user:  name={{ item }}
+        state=absent
+       remove=yes
+  with_items: admin_users_remove
+  when: admin_users_remove is defined
+  tags:
+    - install
+    - additional_admin_users
+
+######################################################################
+
+- name: "Add additional groups"
+  group: name={{ item.name }}
+        state=present
+  with_items: additional_users
+  when: additional_users is defined
+  tags:
+    - install
+    - additional_users
+
+- name: "Add additional user accouts"
+  user:  name={{ item.name }}
+        group={{ item.name }}
+        state=present
+        shell=/bin/bash
+       system=no
+   createhome=yes
+         home=/home/{{ item.name }}
+  with_items: additional_users
+  when: additional_users is defined
+  tags:
+    - install
+    - additional_users
+
+- name: "Add additional authorized_key files"
+  authorized_key: user={{ item.name }}
+                   key="{{ lookup('file', '../../../../secrets/wso2_ssh/users/'+ item.name +'.pub') }}"
+  with_items: additional_users
+  when: additional_users is defined
+  tags:
+    - install
+    - additional_users
+
+- name: "Additional groups"
+  user: name={{ item.name }}
+      groups={{ item.groups }}
+  with_items: additional_users
+  when: item.groups is defined and additional_users is defined
+  tags:
+    - install
+    - additional_users
+
